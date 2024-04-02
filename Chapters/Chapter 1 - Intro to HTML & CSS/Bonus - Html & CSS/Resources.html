@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML and CSS Reference Guide</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <h1>HTML Reference Guide</h1>
+
+    <h2>Head Section</h2>
+        <p>Contains information that describes the webpage document.</p>
+            <pre><code>
+                &lt;head&gt;
+                    ...head section info goes here
+                &lt;/head&gt;
+    </code></pre>
+
+    <h2>Paragraphs</h2>
+             <p>Groups sentences and sections of text together.</p>
+                <pre><code>
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                </code></pre>
+        
+    
+    <h2>Line Break</h2>
+                <p>Causes the next element or text to display on a new line. </p>
+                <pre><code>
+                    ...text goes here &lt;br&gt;
+                    This starts on a new line...
+                </code></pre>
+    
+    <h2>Divs</h2>
+                <p>Configures a structural block area or “division” on a web page with empty space above and below.</p>
+                <pre><code>
+                    &lt;div&gt;
+                        Home Services Contact
+                    &lt;/div&gt;
+                </code></pre>
+    
+    <h2>Unordered Lists</h2>
+                <p>Displays a bullet, or list marker, before each entry in the list.</p>
+                <pre><code>
+                    &lt;ul&gt;
+                        &lt;li&gt; TCP &lt;/li&gt;
+                        &lt;li&gt; IP &lt;/li&gt;
+                        &lt;li&gt; HTTP &lt;/li&gt;
+                        &lt;li&gt; FTP &lt;/li&gt;
+                    &lt;/ul&gt;
+                </code></pre>
+
+    <h2>Ordered Lists</h2>
+                <p>Displays a bullet, or list marker, before each entry in the list.</p>
+                <pre><code>
+                    &lt;ol&gt;
+                        &lt;li&gt; Apply to school &lt;/li&gt;
+                        &lt;li&gt; Register for course &lt;/li&gt;
+                        &lt;li&gt; Pay tuition &lt;/li&gt;
+                        &lt;li&gt; Attend course &lt;/li&gt;
+                    &lt;/ol&gt;
+                </code></pre>
+
+    <h2>Links</h2>
+            <h3>Absolute Link</h3>
+                <p>Link to a different website</p>
+                <pre><code>
+                    &lt;a href="https://yahoo.com"&gt; Yahoo &lt;/a&gt;
+                </code></pre>
+            <h3>Relative Link</h3>
+                <p>Link to pages on your own site</p>
+                <pre><code>
+                    &lt;a href="index.html"&gt; Home &lt;/a&gt;
+                </code></pre>
+    
+    <h2>Images</h2>
+             <p>Display images on your webpage.</p>
+             <pre><code>
+                &lt;img src="image.png" alt="Description"&gt;
+             </code></pre>
+
+    <h2>Forms</h2>
+             <p>An HTML form is used to collect user input. </p>
+             <pre><code>
+                &lt;form action="/submit" method="post"&gt;
+                &lt;input type="text" name="name" placeholder="Name"&gt;
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+             </code></pre>
+    
+    <h1>CSS Reference Guide</h1>
+
+    <h2>Background-color</h2>
+             <p>Set the background color for a page.</p>
+             <pre><code>
+                body {background-color: beige;}
+             </code></pre>
+    
+    <h2>Border</h2>
+             <p>Set the style of the borders for different elements.</p>
+             <pre><code>
+                h1 {
+                    border: 5px solid red;
+                  }
+             </code></pre>
+    
+    <h2>Box-shadow</h2>
+             <p>Add shadows to different div elements.</p>
+             <pre><code>
+                #example1 {
+                    box-shadow: 5px 10px;
+                  }
+             </code></pre>
+
+    <h2>Color</h2>
+             <p>Set the text-color for different elements.</p>
+             <pre><code>
+                h1 {
+                    color: #00ff00;
+                  }
+             </code></pre>
+
+    <h2>Display</h2>
+             <p>Use of some different display values.</p>
+             <pre><code>
+                p.ex2 {display: inline;}
+             </code></pre>
+
+    <h2>Font-family</h2>
+             <p>Specify the font for two paragraphs.</p>
+             <pre><code>
+                p.a {
+                    font-family: "Times New Roman", Times, serif;
+                  }
+             </code></pre>
+
+    <h2>Font-size</h2>
+             <p>Set the font size for different elements.</p>
+             <pre><code>
+                div.a {
+                    font-size: 15px;
+                  }
+             </code></pre>
+
+    <h2>Margin</h2>
+             <p>Set the margin for all four sides of a p element to 35 pixels</p>
+             <pre><code>
+                p {
+                    margin: 35px;
+                  }
+             </code></pre>
+
+</body>
+</html>

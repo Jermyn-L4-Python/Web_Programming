@@ -1,0 +1,141 @@
+body{
+    background-color: black;
+}
+*{
+    text-decoration: none;
+}
+h1{
+     background-color:black;
+    padding: 5px;
+    color: #D3D3D3;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 80px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-size: 40px;
+    font-family:monospace;
+    text-align: center;
+    color: black;
+}
+
+p{
+    font-size: 20px;
+    font-family:monospace;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 2px;;
+}
+.plot{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E4E2;
+    padding: 30px;
+
+}
+
+.Cast{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#E5E4E2; 
+    padding: 5px; 
+    font-size: 20px; 
+}
+
+.reviews{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#E5E4E2; 
+    padding: 30px;    
+}
+
+.link{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#E5E4E2; 
+    padding: 30px; 
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    font-family:cursive;
+    color: darkgray;
+    font-size: 18px;
+    margin-right: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar{
+    background-color: black;
+    padding: 5px;
+}
+
+.watch{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: darkgray;   
+    border: solid black;
+    font-family:cursive;
+}
+
+.watch a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+dl{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+dt, dd{
+    flex-basis: 50%; 
+    box-sizing: border-box; 
+    padding: 5px;
+    text-align:center;
+    font-family:monospace;
+}
+
+dt{
+    text-align: left;
+}
+
+dd{
+   
+   text-align: right;
+   
+}
+
+.got{
+    font-size: 30px;
+    border-radius: 10px;
+    border: solid black;
+    background-color: black;
+    color: darkgray;
+    padding: 5px;
+    font-family: cursive;
+}
+
+#crit{
+    font-style: italic;
+}
+
+img{
+    border: solid black;
+}
