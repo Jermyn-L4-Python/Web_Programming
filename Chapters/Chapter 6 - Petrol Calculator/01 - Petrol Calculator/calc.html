@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                color: lightgray;
+                background-color: black;
+                font-size: 20px;
+            }
+            .box{
+                width: 500px;
+                height: auto;
+                margin: auto;
+                margin-top: 200px;
+                border: 1px solid white;
+                padding: 40px;
+                background-color: darkslategray;
+            }
+
+            .petrol{
+                margin-left: -45px;
+            }
+
+            #petrol,
+            #liters{
+                background-color: darkorange;
+                border-radius: 10px;
+                color: white;
+                font-size: 20px;
+                border: 2px solid white;
+                transition: text-shadow 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+            }
+
+            #petrol:focus,
+            #liters:focus{
+                background-color: white;
+                color: orange;
+                padding: 10px;
+            }
+
+            button{
+                background-color: orange;
+                color: white;
+                transition: text-shadow 0.3s ease, padding 0.3s ease, border-color 0.3s ease;
+                border-radius: 20px;
+                border: 2px solid white;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            button:hover{
+                background-color: white;
+                color: orange;
+                padding: 15px;
+            }
+
+        </style>
+    </head>
+<body>
+
+    <!--a div class to create a box which i styled on css--> 
+    <div class = "box"> <center>
+    
+    <!--p class to seperate this section from liters purchased-->
+        <p class = "petrol">
+         Cost of Petrol per liter:  
+
+    <!--a field for the user to input a number with a starting value of 1.72 -->
+        <input type = "number" id = "petrol" name = "petrol" value = "1.72">
+    <br><br>
+    </p>
+
+
+    Liters purchased:
+    <!--another input field for the liters purchased with a starting value of 0-->
+    <input type = "number" id = "liters" name = "liters" value = "0">
+    
+    <br><br><br>
+
+    <!--a button that will call out function Calculate() when pressed-->
+    <button type = "button" onclick = "Calculate()">Calculate</button>
+    
+
+    <!--id that will automatically print out the result given by the function Calculate()-->
+    <p id = "Cost"></p>
+</center>
+</div>
+
+    <script>
+        //make a function called calculate with no scope
+        function Calculate(){
+            //create variables that takes the inputted value from "petrol" and "liters" and convert it to a float
+            var petrol = parseFloat(document.getElementById('petrol').value);
+            var liters = parseFloat(document.getElementById('liters').value);
+
+            //a variable called Cost that will calculate the total which will be called out later on in <p id = "Cost">
+            var Cost = petrol + liters;
+            
+            //Call out the variable Cost and print out the result
+            //"Total:" + Cost means to combine the text "Total:"" and the Cost
+            //Cost.toFixed(2) will round off the Cost to 2 decimal places  
+            document.getElementById('Cost').innerText = "Total: " + Cost.toFixed(2);
+        }
+    </script>
+</body>
+</html>
